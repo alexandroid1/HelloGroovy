@@ -49,3 +49,15 @@ println m[0][1] // The first group in the first match (i.e. G)
 println m[1][0] // The second whole match (i.e. the word groovy)
 println m[1][1] // The first group in the second match (i.e. g)
 
+Company company = new Company()
+if(company.getContact() != null
+        && company.getContact().getAddress() != null
+        && company.getContact().getAddress().getCountry() == Country.NEW_ZEALAND) println Country.NEW_ZEALAND
+
+// If the contact or the address are null, the result of the left side will just be null, but no exception will be thrown.
+if(company.getContact()?.getAddress()?.getCountry() == Country.NEW_ZEALAND) {}
+
+
+
+
+
