@@ -31,6 +31,9 @@ remove "Beer"
 add "Apple Juice"
 println shoppingList
 
+
+// Regular Expressions
+
 println ""
 def pattern = ~/a slash must be escaped \/ but backslash, like in a digit match \d does not/
 println pattern
@@ -49,6 +52,9 @@ println m[0][1] // The first group in the first match (i.e. G)
 println m[1][0] // The second whole match (i.e. the word groovy)
 println m[1][1] // The first group in the second match (i.e. g)
 
+
+// Safe Navigation Operator "?."
+
 Company company = new Company()
 if(company.getContact() != null
         && company.getContact().getAddress() != null
@@ -57,6 +63,13 @@ if(company.getContact() != null
 // If the contact or the address are null, the result of the left side will just be null, but no exception will be thrown.
 if(company.getContact()?.getAddress()?.getCountry() == Country.NEW_ZEALAND) {}
 
+
+// Elvis Operator "?:" (ternary operator)
+
+Client client = new Client()
+def name = client.getName() != null ? client.getName() : ""
+// or
+name = client.getName() ?: ""
 
 
 
