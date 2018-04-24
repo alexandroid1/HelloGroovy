@@ -1,4 +1,4 @@
-package com.globallogic.groovy
+package com.globallogic.groovy.stubs
 
 class Client {
 

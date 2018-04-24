@@ -1,5 +1,10 @@
 package com.globallogic.groovy
 
+import com.globallogic.groovy.stubs.Client
+import com.globallogic.groovy.stubs.Company
+import com.globallogic.groovy.stubs.Country
+import com.globallogic.groovy.stubs.Pizza
+
 println "Hello Groovy World"
 
 println ""
