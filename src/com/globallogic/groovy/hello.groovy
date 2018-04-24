@@ -20,6 +20,13 @@ list.add("Groovy")
 list.add "Groovy"
 list << "Groovy"
 
+
+// No-Arg Method Parentheses Optional
+
+def pizza = new Pizza()
+def deliver = pizza.&deliver()
+deliver
+
 println ""
 def shoppingList = []
 def add = shoppingList.&add
@@ -30,13 +37,6 @@ add "Beer"
 remove "Beer"
 add "Apple Juice"
 println shoppingList
-
-
-// No-Arg Method Parentheses Optional
-
-def pizza = new Pizza()
-def deliver = pizza.&deliver()
-deliver
 
 
 // Regular Expressions
